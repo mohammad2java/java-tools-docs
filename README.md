@@ -43,9 +43,36 @@
 
 
 
+     how to add jvmArgument in spring boot application using pom.xml with spring-boot-maven-plugin
+     --------------------------------------------------------------------------
+                <plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+			<jvmArguments>
+                    -Xmx1g
+                    -Xms512m
+                </jvmArguments>
+				</configuration>
+			</plugin>
 
 
-    
+     there are 2 ways 
+     1) used single line with comma(,) seperator
+                <jvmArguments>
+                    -Xmx1g,-Xms512m
+                </jvmArguments>
+     2) use newline for each vmargument
+                <jvmArguments>
+                    -Xmx1g
+                    -Xms512m
+                </jvmArguments>
 
 
 
