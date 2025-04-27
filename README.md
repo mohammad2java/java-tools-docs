@@ -45,7 +45,7 @@
       alomost all jvm flag can be set or print using following syntax.
 
       -XX:+FlagName  --for print like -XX:+PrintFlagsFinal
-      -XX:FlagName=Value for setting value like - XX:HeapDumpOnOutOfMemoryError=true
+      -XX:FlagName=Value for setting value like -XX:HeapDumpOnOutOfMemoryError=true
       
 
 
