@@ -40,6 +40,12 @@
       example  for max heap size 3 GB and system node.name propery
       ----------------------------------------------------------------
       java -Xmx3g -jar -Dnode.name=dev1 app.jar  or java -X3072m -Dnode.name=dev1 -jar app.jar
+
+
+      alomost all jvm flag can be set or print using following syntax.
+
+      -XX:+FlagName  --for print like -XX:+PrintFlagsFinal
+      -XX:FlagName=Value for setting value like - XX:HeapDumpOnOutOfMemoryError=true
       
 
 
