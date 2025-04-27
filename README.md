@@ -17,11 +17,13 @@
        jvm arguments types
       ------------------------------------------------
       basically we have many types basically most frequently used type are 2.
-      1) start with -D  [always keep D in uppercase]  --this is use to pass jvm./system properties like -Dnode.name=dev1
-      2) start with -X  [allways keep X in uppercase] -- this is use to provide configuration for jvm[like heap memory[intial,max], stack size]
-         ms --heap initial size [k,m,g{kb,mb,gb}]
-         mx --heap max size   [k,m,g{kb,mb,gb}]
-         ss -- stack size  [k,m,g{kb,mb,gb}]
+      1) start with -D  [D="Define system property"]  --this is use to pass jvm./system properties like -Dnode.name=dev1
+      2) start with -X  [X = "extended option"] -- this is use to provide configuration for jvm[like heap memory[intial,max], stack size]
+      3) start with -XX:  [XX = "eXtended eXperimental options"] -- They are advanced JVM settings — deeper than -X options
+      
+         ms --heap initial size [k,m,g{kb,mb,gb}]   ms = memory start
+         mx --heap max size   [k,m,g{kb,mb,gb}]   mx = memory max
+         ss -- stack size  [k,m,g{kb,mb,gb}]   ss = stack size
          
       example  for max heap size 3 GB
       -----------------------------------------
