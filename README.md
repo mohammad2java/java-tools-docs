@@ -49,5 +49,13 @@
       
 
 
+## heap dump --analysing for spring boot
+--------------------------------------------
+            1) https://visualvm.github.io/ or Eclipse mat
+            2) for taking dump via actuator: for http://localhost:8080/actuator/heapdump
+               management.endpoints.web.exposure.include=heapdump
+               management.endpoint.heapdump.access=READ_ONLY
+
+
 
 
