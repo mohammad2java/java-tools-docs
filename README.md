@@ -58,4 +58,8 @@
 
 
 
+notes: for container based application please use dynamic settings of max heap size .
+like 
+-XX:MaxRAMPercentage=75.0 would set the maximum heap to 75% of the total available RAM or container memory limit. 
+
 
